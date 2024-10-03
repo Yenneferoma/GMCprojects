@@ -1,0 +1,40 @@
+/* Styling for the div */
+
+.container {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.color-box {
+
+    width: 500px;
+    height: 300px;
+    background-color: lightblue;
+    margin: 20px auto;
+    border: 2px solid lightblue;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+    line-height: 200px;
+    color: #ffffff;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: blueviolet;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
