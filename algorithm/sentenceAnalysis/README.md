@@ -33,7 +33,7 @@ The algorithm processes a given sentence to calculate the following metrics:
 
 ## Pseudocode
 
-    ```java
+    
     // Initialize counts
 
     let length_count = 0
@@ -59,7 +59,7 @@ The algorithm processes a given sentence to calculate the following metrics:
     OUTPUT "Number of vowels: ", vowel_count
     
     END ALGORITHM
-    ```
+
 
 ---
 
@@ -69,7 +69,7 @@ The sentence analysis is implemented in a JavaScript function called `sentenceAn
 
 ### Function Definition for accurate word counting
 
-    ```javascript
+    
     function sentenceAnalysis(sentence) {
 
     // Initialize counts
@@ -115,7 +115,6 @@ The sentence analysis is implemented in a JavaScript function called `sentenceAn
 
     // Test the functionconst displaySentence = "This is an algorithm to     analyze a sentence.";
     sentenceAnalysis(displaySentence);
-    ```
 
 ---
 
@@ -142,11 +141,10 @@ You can implement the pseudocode in any programming language to analyze a senten
 
 The function will output:
 
-    ```javascript
     Length of the sentence: 44
     Number of words: 10
     Number of vowels: 13
-    ```
+
 
 ---
 

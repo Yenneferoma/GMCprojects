@@ -64,7 +64,6 @@ Once you have navigated to the project directory, you can run the script using N
 
 1. **Run the script:**
     ```bash
-    Copy code
     node insertion_sort.js
 
 2. You can modify the arr in insertionSort.js to test with different arrays.
@@ -99,18 +98,15 @@ The Insertion Sort algorithm sorts the array in-place. Here's how it works:
 
 The following is an example of sorting an array using this implementation of Insertion Sort:
 
-    ```javascript
     let arr = [12, 27, 98, 11, 13, 5, 6];
     console.log("Original Array:", arr);
     console.log("Sorted Array:", insertionSort(arr));
-    ```
 
 ---
 
 ## Output:
-    ```javascript
+
     Original Array: [12, 27, 98, 11, 13, 5, 6]
     Sorted Array: [5, 6, 11, 12, 13, 27, 98]
-    ```
 
 
