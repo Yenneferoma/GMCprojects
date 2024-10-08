@@ -1,0 +1,34 @@
+ALGORITHM Sentence_Analysis
+
+    // Initialize the counts
+    let length_count = 0
+    let word_count = 1  // Start at 1 to account for the first word
+    let vowel_count = 0
+    
+    // Define the set of vowels
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+    // Process each character in the sentence
+    FOR each character char IN sentence DO:
+
+        // Increment length count for every character
+        length_count ← length_count + 1
+
+        // Count words: Increment if the character is a space
+        IF char = ' ' THEN
+            word_count = word_count + 1
+
+        // Count vowels: Increment if the character is a vowel
+        IF char IN vowels THEN
+            vowel_count = vowel_count + 1
+
+    // Adjust the length counter to exclude the final period
+    IF last character of sentence is '.' THEN
+        length_count = length_count - 1
+
+    // Output the results
+    OUTPUT "Length of the sentence: ", length_count
+    OUTPUT "Number of words: ", word_count
+    OUTPUT "Number of vowels: ", vowel_count
+
+END ALGORITHM
