@@ -1,0 +1,10 @@
+ALGORITHM add_array_nums
+VAR
+    nums : ARRAY_OF number[N];
+    total: number := 0;
+BEGIN
+    FOR i FROM 0 TO N STEP step 1  DO
+        total := total + nums[i]
+        return total
+    END_FOR
+END

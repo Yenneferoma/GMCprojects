@@ -1,0 +1,185 @@
+/* Color Palette */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #2b2d42;
+  --accent-color: #ef476f;
+  --background-color: #f5f7fa;
+  --text-color-dark: #333;
+  --text-color-light: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color-hover: rgba(0, 0, 0, 0.2);
+  --border-color: #ddd;
+}
+
+/* General App Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color-dark);
+  padding: 2rem;
+}
+
+/* Logo Animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* App Header */
+.App-header {
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color-light);
+}
+
+.App-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: var(--accent-color);
+}
+
+/* Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Card Styles */
+.card {
+  width: 20rem;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 6px 12px var(--shadow-color);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: var(--text-color-light);
+  color: var(--text-color-dark);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px var(--shadow-color-hover);
+  transform: translateY(-3px);
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Text Content */
+.content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.content h1 {
+  font-size: 1.6rem;
+  color: var(--text-color-dark);
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-top: 0.5rem;
+}
+
+.content span {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+
+/* Greeting Section */
+.greetingContainer {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.greetingContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color-hover);
+}
+
+.greetingText {
+  color: var(--text-color-dark);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.greetingImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.greetingImage:hover {
+  transform: scale(1.1);
+  border-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .greetingContainer {
+    padding: 1rem;
+  }
+
+  .greetingText {
+    font-size: 1.3rem;
+  }
+}
+
+/* Button Container for Center Alignment */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Additional Spacing for Bottom Margin */
+.button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
