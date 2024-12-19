@@ -1,0 +1,16 @@
+{
+  "name": "typescript-fundamentals",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "John Evwer",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
