@@ -1,0 +1,11 @@
+.blogCard_btn {
+  background-color: rgb(161, 92, 3);
+  color: #fff;
+  font-weight: 600;
+}
+
+.blogCard_btn:hover {
+  background-color: rgb(168, 130, 80);
+  color: #fff;
+  transition: ease-in-out 0.4s;
+}
