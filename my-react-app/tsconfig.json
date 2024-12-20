@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Sets the JavaScript version output
+    "module": "ESNext", // Specifies the module system
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Includes standard library definitions
+    "allowJs": true, // Allows JavaScript files
+    "skipLibCheck": true, // Skips type checks of library files
+    "esModuleInterop": true, // Enables ES module interop
+    "allowSyntheticDefaultImports": true, // Allows default imports
+    "strict": true, // Enables strict type-checking
+    "forceConsistentCasingInFileNames": true, // Ensures consistent file casing
+    "moduleResolution": "Node", // Specifies module resolution strategy
+    "resolveJsonModule": true, // Allows importing JSON files
+    "isolatedModules": true, // Ensures each file is a module
+    "noEmit": true, // Prevents emitting compiled files
+    "jsx": "react-jsx", // Configures JSX behavior for React
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"], // Specifies files to include in the project
+  "exclude": ["node_modules"]
+}
